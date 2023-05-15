@@ -3,7 +3,7 @@
 	"type": "object",
 	"additionalProperties": false,
 	"properties": {
-		"fatherNode": {
+		"name": {
 			"type": "string"
 		},
 		"fields": {
@@ -13,6 +13,18 @@
 				"^[A-Z][A-Za-z0-9]{1,9}$": {
 					"$ref": "./Field.json"
 				}
+			}
+		},
+		"fieldsOrder": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		},
+		"key": {
+			"type": "array",
+			"items": {
+				"type": "string"
 			}
 		},
 		"transient": {
@@ -26,11 +38,7 @@
 		},
 		"extends": {
 			"type": "string"
-		},
-		"descField": {
-			"type": "string"
 		}
 	},
-	"required": [
-	]
+	"required": []
 }

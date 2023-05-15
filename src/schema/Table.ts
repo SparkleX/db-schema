@@ -5,14 +5,15 @@
 export type EditType = "amount" | "price";
 
 export interface Table {
-	fatherNode?: string;
+	name?: string;
 	fields?: {
 		[k: string]: Field;
 	};
+	fieldsOrder?: string[];
+	key?: string[];
 	transient?: boolean;
 	tables?: string[];
 	extends?: string;
-	descField?: string;
 }
 /**
  * This interface was referenced by `undefined`'s JSON-Schema definition

@@ -6,7 +6,7 @@ import camelCase from "camelcase";
 import glob from "glob";
 
 console.log("generate schema");
-const outputSchemaFolder = "src";
+const outputSchemaFolder = "src/schema";
 
 async function generateSchema() {
 	const files = glob.sync(`schema/**/index.json`);

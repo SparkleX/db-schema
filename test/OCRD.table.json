@@ -1,0 +1,19 @@
+{
+	"name": "OCRD",
+	"fields": {
+		"Id": {
+			"type": "uuid"
+		},
+		"Name": {
+			"type": "string",
+			"size": 64
+		}
+	},
+	"fieldsOrder": [
+		"Id",
+		"Name"
+	],
+	"key": [
+		"Id"
+	]
+}

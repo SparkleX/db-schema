@@ -1,0 +1,17 @@
+{
+	"editor.formatOnSave": true,
+	"json.schemas": [
+		{
+			"fileMatch": [
+				"*.table.json"
+			],
+			"url": "./schema/table/index.json"
+		}
+	],
+	"editor.tabSize": 4,
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	}
+}

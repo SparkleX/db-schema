@@ -15,7 +15,7 @@
 	"include": ["src"],
 	"exclude": ["**/*.spec.ts"],
 	"ts-node": {
-		"esm": true
-	},
-
+		"esm": true,
+		"experimentalSpecifierResolution": "node"
+	}
 }

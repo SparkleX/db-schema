@@ -2,10 +2,19 @@
   "name": "db-schema",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "ts-node schema && tsc"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jsonfile": "^6.1.1",
+    "camelcase": "^7.0.1",
+    "glob": "^7.2.3",
+    "json-schema-to-typescript": "^13.0.1",
+    "jsonfile": "^6.1.0",
+    "ts-node": "^10.9.1"
+  }
 }

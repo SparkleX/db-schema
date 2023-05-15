@@ -1,0 +1,23 @@
+{
+	"name": "OITM",
+	"fields": {
+		"Id": {
+			"type": "uuid"
+		},
+		"Code": {
+			"type": "string",
+			"size": 64
+		},
+		"Name": {
+			"type": "string",
+			"size": 64
+		}
+	},
+	"fieldsOrder": [
+		"Id",
+		"Name"
+	],
+	"key": [
+		"Id"
+	]
+}

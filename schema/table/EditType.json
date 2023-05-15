@@ -1,0 +1,5 @@
+{
+	"title": "EditType",
+	"type": "string",
+	"enum": ["amount", "price"]
+}

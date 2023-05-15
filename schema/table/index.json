@@ -1,0 +1,36 @@
+{
+	"title": "Table",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"fatherNode": {
+			"type": "string"
+		},
+		"fields": {
+			"type": "object",
+			"additionalProperties": false,
+			"patternProperties": {
+				"^[A-Z][A-Za-z0-9]{1,9}$": {
+					"$ref": "./Field.json"
+				}
+			}
+		},
+		"transient": {
+			"type": "boolean"
+		},
+		"tables": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			}
+		},
+		"extends": {
+			"type": "string"
+		},
+		"descField": {
+			"type": "string"
+		}
+	},
+	"required": [
+	]
+}

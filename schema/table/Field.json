@@ -1,0 +1,53 @@
+{
+	"title": "Field",
+	"type": "object",
+	"additionalProperties": false,
+	"properties": {
+		"type": {
+			"type": "string",
+			"enum": [
+				"uuid",
+				"string",
+				"text",
+				"number",
+				"decimal",
+				"date",
+				"time"
+			]
+		},
+		"size": {
+			"type": "number"
+		},
+		"defaultValue": {
+			"type": "string"
+		},
+		"codeList": {
+			"type": "string"
+		},
+		"transient": {
+			"type": "boolean"
+		},
+		"editType": {
+			"$ref": "./EditType.json"
+		},
+		"invisible": {
+			"type": "boolean"
+		},
+		"linkTo": {
+			"type": "string"
+		},
+		"boolValue": {
+			"type": "array",
+			"items": {
+				"type": "string"
+			},
+			"minItems": 2,
+			"maxItems": 2,
+			"uniqueItems": true
+		},
+		"note": {
+			"type": "string"
+		}
+	},
+	"required": []
+}
